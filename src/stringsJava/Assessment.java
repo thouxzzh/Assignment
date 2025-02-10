@@ -1,3 +1,39 @@
+//program 1 easy
+//package stringsJava;
+//public class Assessment {
+//    public static void main(String[] args) {
+//        String text = "INDIA";
+//        String en = "";
+//        String de= "";
+//        for (char c : text.toCharArray()) {
+//            en += (char) (c + 2);
+//        }
+//        for (char c : en.toCharArray()) {
+//            de+= (char) (c - 2);
+//        }
+//
+//        System.out.println("Encrypted: " + en);
+//        System.out.println("Decrypted: " + de);
+//    }
+//}
+
+
+//program 2
+//package stringsJava;
+//import java.util.*;  
+//public class Assessment{  
+//    public static void main(String[] args) {  
+//        Scanner sc = new Scanner(System.in);  
+//        System.out.print("Enter the string: ");  
+//        String input = sc.nextLine();  
+//        sc.close();  
+//        StringBuilder res = new StringBuilder();  
+//        for (char c : input.toCharArray()) {  
+//            if (Character.isLetter(c)) res.append(c);  
+//        }  
+//        System.out.println("Output: " + res.toString());  
+//    }  
+//}
 //Program 3(Easy)
 //package stringsJava;
 //import java.util.Arrays;
@@ -11,7 +47,28 @@
 //	           }
 //	       }
 //	   }
-//Program 3 (Medium)
+
+// program 4
+//package stringsJava;
+//import java.util.*; 
+//public class Assessment {  
+//    public static void main(String[] args) {  
+//        Scanner sc = new Scanner(System.in);  
+//        System.out.print("Enter an uppercase string: ");  
+//        String in = sc.nextLine();  
+//        sc.close();  
+//        int[] a= new int[26];  
+//        for (char c : in.toCharArray()) {  
+//            if (c >= 'A' && c <= 'Z') a[c - 'A']++;  
+//        }  
+//        for (int i = 0; i < 26; i++) {  
+//            if (a[i] > 0) System.out.println((char) (i + 'A') + " : " + a[i]);  
+//        }  
+//    }  
+//}
+
+// Medium -1
+
 //package stringsJava;
 //import java.util.*;
 //public class Assessment {
@@ -32,6 +89,79 @@
 //        }
 //    }
 //}
+
+//program 2
+
+//package stringsJava;
+//import java.util.*;  
+//public class Assessment{  
+//    public static void main(String[] args) {  
+//        Scanner sc= new Scanner(System.in);  
+//        System.out.print("Enter first name ");  
+//        String fName = sc.next();  
+//        System.out.print("Enter last name: ");  
+//        String lName = sc.next();  
+//        sc.close();  
+//        String a = fName.substring(0, 3);  
+//        String b = lName.substring(lName.length() - 3);  
+//        int lengthSum = fName.length() + lName.length();  
+//        String password = a + b + lengthSum;  
+//        System.out.println("Generated Password: " + password.toLowerCase());  
+//    }  
+//}`
+
+//Program 3 (Medium)
+
+//package stringsJava;
+//import java.util.*;
+//import java.util.Arrays;
+//import java.util.Scanner;
+//public class Assessment{
+//	public static void main(String[] args) {
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("Enter no.of.names:");
+//		int n=sc.nextInt();
+//        String name[]=new String[n];
+//		for(int i=0;i<n;i++) {
+//			name[i]=sc.next();
+//	}
+//		 Arrays.sort(name);
+//        System.out.println("Sorted Names:");
+//        for(int i=0;i<n;i++) {
+//            System.out.println(name[i]);
+//      }
+//	}
+//}
+
+//Program 4
+//package stringsJava;
+//import java.util.*;  
+//public class Assessment{  
+//    public static void main(String[] args) {  
+//        Scanner sc = new Scanner(System.in);  
+//        System.out.println("Enter a sentence:");  
+//        String text = sc.nextLine().toLowerCase();  
+//        sc.close();  
+//
+//        String vowels = "aeiou";  
+//        int count = 0;  
+//
+//        System.out.print("Vowel pairs: ");  
+//        for (int i = 0; i < text.length() - 1; i++) {  
+//            char first = text.charAt(i);  
+//            char second = text.charAt(i + 1);  
+//
+//            if (vowels.indexOf(first) != -1 && vowels.indexOf(second) != -1) {  
+//                System.out.print(first + "" + second + " ");  
+//                count++;  
+//            }  
+//        }  
+//
+//        System.out.println("\nTotal occurrences: " + count);  
+//    }  
+//}
+//
+
 
 //Hard -1
 //package stringsJava;
@@ -69,5 +199,19 @@
 //		return new String(ch);
 //	}
 //}
-
-
+//program 2
+//package stringsJava;
+//import java.util.*;
+//public class Assessment{
+//	    public static void main(String[] args) {
+//	      Scanner sc=new Scanner(System.in);
+//	      String pw=sc.nextLine();
+//	      String pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{6,}";
+//	      if(pw.matches(pattern)){
+//	    	  System.out.println("Strong");
+//	      }
+//	      else{
+//	    	 System.out.println("Not Strong");
+//	      }
+//	   }
+//	}
