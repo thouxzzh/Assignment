@@ -16,19 +16,18 @@ import java.util.*;
 //}
 //}
 //Question 2
-//    public class main{
-//    public static void main(String args[]) {
-//    	Scanner sc=new Scanner(System.in);
-//    	System.out.println("Enter the number");
-//    	int number=sc.nextInt();
-//    	if(number%7==0) {
-//    		System.out.println("It is divisable");
-//    	}
-//    	else {
-//    		System.out.println("It is not divisable");
-//    	}
-//    }
-//    }
+   public class main{
+   public static void main(String args[]) {
+   	Scanner sc=new Scanner(System.in);
+   	int number =14;
+   	if(number%7==0) {
+   		System.out.println("It is divisable");
+   	}
+   	else {
+   		System.out.println("It is not divisable");
+   	}
+   }
+   }
 ////Question 3
 //      public class main{
 //	  public static void main(String args[]) {
@@ -198,22 +197,22 @@ import java.util.*;
 //        System.out.println("The maximum value is " +maxSoFar);
 //    }
 //}
- public class main{
-	 public static void main(String args[]) {
- Scanner sc=new Scanner(System.in);
- String moviename[]= {"AAA","BBB","CCC","DDD"};
-  String moviegenre[]= {"COMEDY","THRILLER","ACTION","ACTION"};
-  String input=sc.nextLine();
-  System.out.println("Enter genre to be searched:");
-  String genre=sc.nextLine();
-  int counter=0;
-  for(int i:moviegenre){
-    if(i.equals(genre)) {
-       System.out.println(moviegenre+" movies are "+moviename[counter]);
-}
-}
-}
-}
+//  public class main{
+// 	 public static void main(String args[]) {
+//  Scanner sc=new Scanner(System.in);
+//  String moviename[]= {"AAA","BBB","CCC","DDD"};
+//   String moviegenre[]= {"COMEDY","THRILLER","ACTION","ACTION"};
+//   String input=sc.nextLine();
+//   System.out.println("Enter genre to be searched:");
+//   String genre=sc.nextLine();
+//   int counter=0;
+//   for(int i:moviegenre){
+//     if(i.equals(genre)) {
+//        System.out.println(moviegenre+" movies are "+moviename[counter]);
+// }
+// }
+// }
+// }
 //(Nested Loop)
 //public class main{
 //    public static void main(String[] args){
